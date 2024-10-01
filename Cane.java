@@ -1,6 +1,6 @@
 /**
  *
- * @author Scorza Michael
+ * @autho
  */
 public class Cane {
     
