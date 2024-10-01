@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lampadina.testlampadina;
+
+/**
+ *
+ * @author Studente
+ */
+public class Lampadina {
+        // attributi
+    private boolean accesa; // lampadina accesa/spenta
+
+    // ... eventuali altri attribuiti ...
+    
+    // costruttore di default
+    public Lampadina() {
+    };
+        // costruttore
+        public Lampadina (boolean accesa) {
+            this.accesa = accesa;
+        };
+        
+        // metodi 
+        public void accendi() {
+            if (!accesa)
+                {
+                    accesa = true;
+                    System.out.println ("Lampadina e stata accesa");
+                } else {
+                    System.out.println ("Lampadina e gia stata accesa");
+
+            }
+        };
+        
+          public void spegni () {
+            if (accesa)
+                {
+                    accesa = false;
+                    System.out.println ("Lampadina e stata spenta");
+                } else {
+                    System.out.println ("Lampadina e gia stata spenta");
+
+            }
+            
+            // stampare lo stati corrente della lampadina acc/spenta
+            
+        };
+           public String getStato(){
+                 if (accesa) {
+                     return "La lampadina e accesa";
+                 } else {
+                     return "La lampadina e spenta";
+                 }
+             }
+}
