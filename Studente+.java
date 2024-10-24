@@ -29,6 +29,10 @@ public class Studente extends Persona {
     
     @Override 
     public String toString() {
-        return super.toString() + "classe" + classe;     }
+        return super.toString() + "classe" + classe +
+                "\nindirizzo: " + indirizzo + 
+                "\nmedia: " + mediaVoti +
+                "\nIDSTUDENTE: " + IDStudente;
+     }
     
 }
