@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{listings} % For code formatting
+\usepackage{xcolor} % For coloring code
+
+\title{OOP - Array di Oggetti}
+\author{SIAROU SASHA}
+\date{January 2025}
+
+\lstset{
+    language=Java, % Change to C++ if needed
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    breaklines=true
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In programmazione orientata agli oggetti (OOP), un array di oggetti è una struttura dati che permette di memorizzare e gestire più istanze di una classe. Questo è utile per lavorare con un insieme di oggetti correlati.
+
+\section{Esempio di Array di Oggetti}
+Di seguito è riportato un esempio in Java che mostra come creare e utilizzare un array di oggetti:
+
+\subsection{Definizione della Classe}
+\begin{lstlisting}
+// Classe Persona con attributi nome e età
+class Persona {
+    String nome;
+    int eta;
+
+    // Costruttore
+    public Persona(String nome, int eta) {
+        this.nome = nome;
+        this.eta = eta;
+    }
+
+    // Metodo per stampare le informazioni
+    public void stampaInfo() {
+        System.out.println("Nome: " + nome + ", Età: " + eta);
+    }
+}
+\end{lstlisting}
+
+
+
+\subsection{Utilizzo di un Array di Oggetti}
+\begin{lstlisting}
+public class Main {
+    public static void main(String[] args) {
+        // Creazione di un array di oggetti Persona
+        Persona[] persone = new Persona[3];
+
+        // Inizializzazione degli oggetti nell'array
+        persone[0] = new Persona("Alice", 25);
+        persone[1] = new Persona("Bob", 30);
+        persone[2] = new Persona("Charlie", 35);
+
+        // Accesso e utilizzo degli oggetti
+        for (Persona persona : persone) {
+            persona.stampaInfo();
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Conclusione}
+Un array di oggetti è una tecnica potente per gestire collezioni di istanze di classe. L'esempio sopra mostra come definire una classe, creare un array di oggetti e iterare attraverso di esso.
+
+\end{document}
