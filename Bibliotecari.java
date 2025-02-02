@@ -8,7 +8,8 @@ package testbarcasiarou.testbiblioteca;
  *
  * @author jsick
  */
-
+import java.util.ArrayList;
+import java.util.List;
 class Bibliotecario extends Account {
     String livelloDiEsperienza; // neoassunto, normale, esperto
 

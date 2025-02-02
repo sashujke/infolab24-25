@@ -8,12 +8,15 @@ package testbarcasiarou.testbiblioteca;
  *
  * @author jsick
  */
-class Libro {
-    String titolo;
-    String autore;
+import java.util.ArrayList;
+import java.util.List;
+class Account {
+    String indirizzoEmail;
+    String dataNascita;
 
-    Libro(String titolo, String autore) {
-        this.titolo = titolo;
-        this.autore = autore;
+    Account(String indirizzoEmail, String dataNascita) {
+        this.indirizzoEmail = indirizzoEmail;
+        this.dataNascita = dataNascita;
     }
 }
+

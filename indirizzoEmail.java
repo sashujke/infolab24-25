@@ -8,12 +8,6 @@ package testbarcasiarou.testbiblioteca;
  *
  * @author jsick
  */
-class Libro {
-    String titolo;
-    String autore;
-
-    Libro(String titolo, String autore) {
-        this.titolo = titolo;
-        this.autore = autore;
-    }
+class indirizzoEmail {
+    
 }
